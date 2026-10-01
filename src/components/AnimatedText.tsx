@@ -18,7 +18,7 @@ export const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = ''
   return (
     <p ref={containerRef} className={`flex flex-wrap justify-center ${className}`}>
       {words.map((word, wordIndex) => {
-        const start = wordIndex / words.length;
+        // const start = wordIndex / words.length;
         // const end = start + 1 / words.length;
         return (
           <span key={wordIndex} className="inline-block whitespace-nowrap mr-[0.3em]">
