@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# Aniket Verma — Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-end, responsive portfolio web application built with **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed with a dark minimalist aesthetic, smooth scroll-driven animations, custom typography, and interactive project showcases.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+- **Framework:** React 18 + Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons & Graphics:** Inline SVG & Custom UI Layouts
+- **Typography:** Google Fonts (Kanit)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Project Sections
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Hero Section:** Features a bold animated greeting (*"Hi, i'm aniket"*), quick navigation bar, responsive portrait, and a quick intro.
+2. **Developer Marquee:** A continuous horizontal marquee highlighting core technical skills (HTML5, CSS3, JavaScript ES6+, React, TypeScript, Tailwind CSS, Node, Git, GitHub, Vercel, Netlify) and key personal projects.
+3. **About Me:** Highlights your passion for frontend development, responsive web architectures, and modern UI engineering without locking you into a rigid experience duration.
+4. **Services:** Displays your core engineering capabilities (Frontend Development, UI/UX Engineering, Animation & Motion, State & API Integration, and Deployment/Tooling).
+5. **Projects (Stacked Cards Effect):** Interactive sticky-stacking cards showcasing your primary personal projects:
+   - **Shopify E-Commerce Store**
+   - **Job Tracking Application**
+   - **Advanced Calculator**
+   - **Music Player App**
+   *(Includes direct links to your live Netlify deployments)*
+6. **Contact & Socials:** Direct email integration (`aniketverma1403@gmail.com`) via a "Say Hello" button, along with direct links to GitHub, LinkedIn, Twitter/X, Instagram, and Facebook.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Local Development Setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+To run this project locally on your machine (macOS / Windows / Linux):
 
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+### 1. Clone or Open the Repository
+Open your terminal and navigate to your project folder:
+```bash
+cd aniket-portfolio
